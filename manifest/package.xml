@@ -1,14 +1,43 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 	<types>
+		<members>TwilioSendGridContent</members>
+		<members>TwilioSendGridDynamicTemplateData</members>
+		<members>TwilioSendGridError</members>
+		<members>TwilioSendGridFrom</members>
 		<members>TwilioSendGridMailSendRequest</members>
 		<members>TwilioSendGridMailSendResponse</members>
 		<members>TwilioSendGridMailSendServices</members>
+		<members>TwilioSendGridPersonalization</members>
+		<members>TwilioSendGridReplyTo</members>
+		<members>TwilioSendGridTo</members>
 		<name>ApexClass</name>
 	</types>
 	<types>
-		<members>*</members>
+		<members>Twilio_SendGrid</members>
+		<name>CustomApplication</name>
+	</types>
+	<types>
+		<members>Twilio_SendGrid_Demo</members>
+		<name>CustomTab</name>
+	</types>
+	<types>
+		<members>Twilio_SendGrid_Demo</members>
+		<members>Twilio_SendGrid_UtilityBar</members>
+		<name>FlexiPage</name>
+	</types>
+	<types>
+		<members>Twilio_SendGrid</members>
+		<members>Twilio_SendGrid_Demo</members>
+		<name>Flow</name>
+	</types>
+	<types>
+		<members>Twilio_SendGrid</members>
 		<name>NamedCredential</name>
+	</types>
+	<types>
+		<members>Twilio_SendGrid_Logo</members>
+		<name>StaticResource</name>
 	</types>
 	<version>51.0</version>
 </Package>
