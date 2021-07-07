@@ -1,18 +1,23 @@
-# Salesforce DX Project: Next Steps
+# Twilio SendGrid Salesforce Demo
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+## Prerequisite
 
-## How Do You Plan to Deploy Your Changes?
+You will need the following:
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+- [Twilio SendGrid Account](https://signup.sendgrid.com/)
+- [Twilio SendGrid - API Key](https://docs.sendgrid.com/ui/account-and-settings/api-keys)
 
-## Configure Your Salesforce DX Project
+## Getting Started
+### Install
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+- Package Id: 04t5e00000034QO
+- [Production](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t5e00000034QO)
+- [Sandbox](https://test.salesforce.com/packaging/installPackage.apexp?p0=04t5e00000034QO)
 
-## Read All About It
+### Twilio Credentials
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+1. Go to Setup > Quick Find > Named Credentials.
+2. Click on Twilio SendGrid.
+3. Click Edit.
+4. In the Password text field add your API Key.
+5. Click Save.
