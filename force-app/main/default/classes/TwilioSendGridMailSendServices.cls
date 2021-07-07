@@ -2,7 +2,13 @@ public with sharing class TwilioSendGridMailSendServices {
 
     @TestVisible
     private static final String TWILIO_SENDGRID_NAMED_CREDENTIAL = 'Twilio_SendGrid';
-    
+
+    @TestVisible
+    private static final String PATH_URL_MAIL_SEND = '/mail/send';
+
+    @TestVisible
+    private static final Integer HTTP_RESPONSE_STATUS_ACCEPTED = 202;
+
     @InvocableMethod(label='Mail Send' description='Send Email.' category='Twilio SendGrid')
     public static List<TwilioSendGridMailSendResponse> sendEmail(List<TwilioSendGridMailSendRequest> requests) {
         List<TwilioSendGridMailSendResponse> responses = new List<TwilioSendGridMailSendResponse>();
@@ -16,8 +22,7 @@ public with sharing class TwilioSendGridMailSendServices {
     }
     
     public static TwilioSendGridMailSendResponse sendEmail(TwilioSendGridMailSendRequest aRequest) {
-        String path = '/mail/send';
-        String uri = generateURI(path);
+        String uri = generateURI();
         Http http = new Http();
         HttpRequest req = new HttpRequest();
         req.setMethod('POST');
@@ -27,13 +32,23 @@ public with sharing class TwilioSendGridMailSendServices {
         req.setBody(aRequest.generateBody());
         HttpResponse response = http.send(req);
         
-        TwilioSendGridMailSendResponse aResponse = TwilioSendGridMailSendResponse.parse(response.getBody());
+        TwilioSendGridMailSendResponse aResponse;
+
+        if(response.getStatusCode() == HTTP_RESPONSE_STATUS_ACCEPTED) {
+            aResponse = new TwilioSendGridMailSendResponse();
+        } else {
+            aResponse = TwilioSendGridMailSendResponse.parse(response.getBody());
+        }
+
+        // Add Status and Status Code
+        aResponse.status = response.getStatus();
+        aResponse.statusCode = response.getStatusCode();
         return aResponse;
     }
     
     @TestVisible
-    private static String generateURI(String path) {
-        String uri = Test.isRunningTest() ? 'http://callout.' + TWILIO_SENDGRID_NAMED_CREDENTIAL + '.com/' + path : 'callout:' + TWILIO_SENDGRID_NAMED_CREDENTIAL + path;
+    private static String generateURI() {
+        String uri = Test.isRunningTest() ? 'http://callout.' + TWILIO_SENDGRID_NAMED_CREDENTIAL + '.com/' + PATH_URL_MAIL_SEND : 'callout:' + TWILIO_SENDGRID_NAMED_CREDENTIAL + PATH_URL_MAIL_SEND;
         return uri;
     }
 }
