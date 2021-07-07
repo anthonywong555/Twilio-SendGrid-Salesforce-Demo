@@ -1,5 +1,8 @@
 # Twilio SendGrid Salesforce Demo
 
+Email is the backbone of your customer engagement. The Twilio SendGrid Email API gives you the flexibility to turn your ideas into reality, and the support to scale them into production.
+
+![](./assets/Twilio-SendGrid-Salesforce-Demo.gif)
 ## Prerequisite
 
 You will need the following:
@@ -10,9 +13,9 @@ You will need the following:
 ## Getting Started
 ### Install
 
-- Package Id: 04t5e00000034QO
-- [Production](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t5e00000034QO)
-- [Sandbox](https://test.salesforce.com/packaging/installPackage.apexp?p0=04t5e00000034QO)
+- Package Id: 04t5e00000034mF
+- [Production](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t5e00000034mF)
+- [Sandbox](https://test.salesforce.com/packaging/installPackage.apexp?p0=04t5e00000034mF)
 
 ### Twilio SendGrid Credentials
 
