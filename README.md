@@ -14,7 +14,7 @@ You will need the following:
 - [Production](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t5e00000034QO)
 - [Sandbox](https://test.salesforce.com/packaging/installPackage.apexp?p0=04t5e00000034QO)
 
-### Twilio Credentials
+### Twilio SendGrid Credentials
 
 1. Go to Setup > Quick Find > Named Credentials.
 2. Click on Twilio SendGrid.
