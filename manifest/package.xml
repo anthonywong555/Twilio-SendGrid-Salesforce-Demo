@@ -2,14 +2,23 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 	<types>
 		<members>TwilioSendGridContent</members>
+		<members>TwilioSendGridContentTest</members>
 		<members>TwilioSendGridDynamicTemplateData</members>
+		<members>TwilioSendGridDynamicTemplateDataTest</members>
 		<members>TwilioSendGridError</members>
+		<members>TwilioSendGridErrorTest</members>
 		<members>TwilioSendGridFrom</members>
+		<members>TwilioSendGridFromTest</members>
 		<members>TwilioSendGridMailSendRequest</members>
+		<members>TwilioSendGridMailSendRequestTest</members>
 		<members>TwilioSendGridMailSendResponse</members>
+		<members>TwilioSendGridMailSendResponseTest</members>
 		<members>TwilioSendGridMailSendServices</members>
+		<members>TwilioSendGridMailSendServicesTest</members>
 		<members>TwilioSendGridPersonalization</members>
+		<members>TwilioSendGridPersonalizationTest</members>
 		<members>TwilioSendGridReplyTo</members>
+		<members>TwilioSendGridReplyToTest</members>
 		<members>TwilioSendGridTo</members>
 		<name>ApexClass</name>
 	</types>
