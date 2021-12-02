@@ -9,10 +9,10 @@ public with sharing class TwilioSendGridMailSendRequest {
     @AuraEnabled @InvocableVariable(label='Reply To' description='Object of ReplyTo' required=false)
     public TwilioSendGridReplyTo reply_to;
 
-    @AuraEnabled @InvocableVariable(label='Subject' description='The global or \'message level\' subject of your email. This may be overridden by subject lines set in personalizations.' required=true)
+    @AuraEnabled @InvocableVariable(label='Subject' description='The global or \'message level\' subject of your email. This may be overridden by subject lines set in personalizations.' required=false)
     public String subject;
 
-    @AuraEnabled @InvocableVariable(label='Content' description='An array where you can specify the content of your email. You can include multiple MIME types of content, but you must specify at least one MIME type. To include more than one MIME type, add another object to the array containing the type and value parameters.' required=true)
+    @AuraEnabled @InvocableVariable(label='Content' description='An array where you can specify the content of your email. You can include multiple MIME types of content, but you must specify at least one MIME type. To include more than one MIME type, add another object to the array containing the type and value parameters.' required=false)
     public List<TwilioSendGridContent> content;
     
     @AuraEnabled @InvocableVariable(label='Template Id' description='An email template ID. A template that contains a subject and content — either text or html — will override any subject and content values specified at the personalizations or message level.' required=false)

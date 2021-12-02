@@ -13,9 +13,9 @@ You will need the following:
 ## Getting Started
 ### Install
 
-- Package Id: 04t5e00000034mF
-- [Production](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t5e00000034mF)
-- [Sandbox](https://test.salesforce.com/packaging/installPackage.apexp?p0=04t5e00000034mF)
+- Package Id: 04t5e00000034mG
+- [Production](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t5e00000034mG)
+- [Sandbox](https://test.salesforce.com/packaging/installPackage.apexp?p0=04t5e00000034mG)
 
 ### Twilio SendGrid Credentials
 
